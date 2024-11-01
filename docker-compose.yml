@@ -1,6 +1,8 @@
 version: "3.9"
 services: 
   app:
+    # Build context will look into the current directory and build a docker using Dockerfile
+    # Either we can specify the image or give build context
     build:
       context: .
       args:
